@@ -1,9 +1,19 @@
+import './CardChamado.css'
+
 function CardChamado({ chamado }) {
+  const prioridadeClasse = chamado.prioridade.toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+
   return (
-    <div>
-      <p>{chamado.id}</p>
-      <p>{chamado.titulo}</p>
-      <p>{chamado.prioridade}</p>
+    <div className="card-chamado">
+      <div>
+        <p className="id">{chamado.id}</p>
+        <p className="titulo">{chamado.titulo}</p>
+      </div>
+      <span className={`prioridade ${prioridadeClasse}`}>
+        {chamado.prioridade}
+      </span>
     </div>
   )
 }

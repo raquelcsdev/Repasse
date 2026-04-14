@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Relogio from './components/Relogio'
 import CardChamado from './components/CardChamado'
+import './App.css'
 
 const chamadosIniciais = [
   { id: 'INC-0031', titulo: 'Link WAN fora — filial SP', prioridade: 'Crítica' },
@@ -12,13 +13,21 @@ function App() {
   const [chamados, setChamados] = useState(chamadosIniciais)
 
   return (
-    <div>
-      <h1>NOC — Repasse de turno</h1>
-      <Relogio />
-      <p>Total de chamados: {chamados.length}</p>
-      {chamados.map((chamado) => (
-        <CardChamado key={chamado.id} chamado={chamado} />
-      ))}
+    <div className="container">
+      <header className="header">
+        <div>
+          <h1>NOC — Repasse de turno</h1>
+          <p>Turno 12x36</p>
+        </div>
+        <Relogio />
+      </header>
+
+      <main>
+        <p className="secao-titulo">Chamados pendentes</p>
+        {chamados.map((chamado) => (
+          <CardChamado key={chamado.id} chamado={chamado} />
+        ))}
+      </main>
     </div>
   )
 }

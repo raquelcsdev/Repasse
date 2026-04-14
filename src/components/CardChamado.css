@@ -1,0 +1,44 @@
+.card-chamado {
+  background-color: #1e2130;
+  border: 1px solid #2e3250;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-chamado .id {
+  font-size: 12px;
+  color: #888;
+  font-family: monospace;
+}
+
+.card-chamado .titulo {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.card-chamado .prioridade {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.prioridade.critica {
+  background-color: #3d1515;
+  color: #f09595;
+}
+
+.prioridade.alta {
+  background-color: #3d2e0f;
+  color: #fac775;
+}
+
+.prioridade.media {
+  background-color: #0f2340;
+  color: #85b7eb;
+}
