@@ -13,7 +13,7 @@ const chamadosIniciais = [
 const anunciosIniciais = [
   { id: 1, empresa: 'PRODEST', texto: 'Manutenção até as 19h.', tipo: 'manutencao', autor: 'Raquel', data: '14 abr' },
   { id: 2, empresa: 'PMC', texto: 'Evento no Domingo às 08h até as 23h.', tipo: 'informacao', autor: 'Raquel', data: '14 abr' },
-  { id: 3, empresa: 'CLICKBUS', texto: 'Comunicar alertas de API imediatamente.', tipo: 'importante', autor: 'Raquel', data: '14 abr' },
+  { id: 3, empresa: 'CLICKBUS', texto: 'Comunicar alertas de API imediatamente. Deve ser feito através de contato telefonico, o número está na matriz online.', tipo: 'importante', autor: 'Raquel', data: '14 abr' },
   { id: 4, empresa: 'FAMILHÃO', texto: 'Novo contrato monitorado. Acesso no Zabbix.', tipo: 'novidade', autor: 'Raquel', data: '14 abr' },
 ]
 
